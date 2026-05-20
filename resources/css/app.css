@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Aktifkan class-based dark mode (tambah/hapus class 'dark' di <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Branding Tezworks Colors */
+  --color-brand-blue: #2563EB;
+  --color-brand-blue-hover: #1D4ED8;
+  --color-brand-blue-soft: #60A5FA;
+  --color-brand-cyan: #06B6D4;
+  
+  /* Light Mode Palette */
+  --color-light-bg: #FFFFFF;
+  --color-light-bg-sec: #F8FAFC;
+  --color-light-card: #FFFFFF;
+  --color-light-border: #E2E8F0;
+  --color-light-text: #0F172A;
+  --color-light-text-sec: #475569;
+
+  /* Dark Mode Palette */
+  --color-dark-bg: #0F172A;
+  --color-dark-bg-sec: #111827;
+  --color-dark-card: #1E293B;
+  --color-dark-border: #334155;
+  --color-dark-text: #F8FAFC;
+  --color-dark-text-sec: #CBD5E1;
+
+  /* Font configuration with fallback */
+  --font-sans: "Plus Jakarta Sans", "Open Sans", "Ubuntu", sans-serif;
+}
+
+/* Global utility rules */
+@utility scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Base custom styles if any */
+html, body {
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
