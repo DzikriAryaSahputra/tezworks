@@ -20,3 +20,4 @@ yarn-error.log
 /.vscode
 old-website-backup/
 bootstrap/cache/services.php
+Composer-Setup.exe
