@@ -18,3 +18,5 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+old-website-backup/
+bootstrap/cache/services.php
