@@ -4,6 +4,8 @@
 /public/storage
 /storage/*.key
 /vendor
+/bootstrap/cache/*.php
+/old-website-backup
 .env
 .env.backup
 .env.production
