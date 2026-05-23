@@ -14,6 +14,7 @@ class Service extends Model
         'slug',
         'icon',
         'description',
+        'price_range',
         'features',
         'order_weight',
     ];

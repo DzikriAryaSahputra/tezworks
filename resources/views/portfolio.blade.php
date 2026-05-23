@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.landing')
 
 @section('title', 'Portofolio Proyek Terkini — TezWorks')
 
@@ -38,16 +38,21 @@
            data-category="{{ $portfolio->category }}">
         
         <!-- visual mockup -->
-        <div class="relative h-48 bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5 dark:from-brand-blue/10 dark:to-brand-cyan/5 border-b border-light-border dark:border-dark-border flex items-center justify-center p-8 overflow-hidden">
-          <div class="absolute w-44 h-44 rounded-full bg-brand-blue/5 dark:bg-brand-cyan/5 blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+        <div class="relative h-48 bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5 dark:from-brand-blue/10 dark:to-brand-cyan/5 border-b border-light-border dark:border-dark-border flex items-center justify-center p-8 overflow-hidden group-hover:bg-brand-blue/10 dark:group-hover:bg-brand-cyan/10 transition-colors duration-300">
+          @if($portfolio->image_url)
+            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-light-bg-sec/90 via-transparent to-transparent dark:from-dark-bg-sec/90"></div>
+          @else
+            <div class="absolute w-44 h-44 rounded-full bg-brand-blue/5 dark:bg-brand-cyan/5 blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+            <div class="relative z-10 text-center space-y-2 group-hover:scale-105 transition-transform duration-300">
+              <span class="text-4xl">⬡</span>
+              <h4 class="font-extrabold text-base text-light-text dark:text-dark-text leading-snug">{{ $portfolio->title }}</h4>
+            </div>
+          @endif
           
-          <div class="relative z-10 text-center space-y-2 group-hover:scale-105 transition-transform duration-300">
-            <span class="text-4xl">⬡</span>
-            <h4 class="font-extrabold text-base text-light-text dark:text-dark-text leading-snug">{{ $portfolio->title }}</h4>
-            <span class="inline-block text-[9px] uppercase font-bold tracking-widest px-2.5 py-0.5 bg-white/90 dark:bg-dark-bg/90 border border-light-border dark:border-dark-border rounded-full text-light-text dark:text-dark-text">
-              @if($portfolio->category === 'website') Website @elseif($portfolio->category === 'mobile') Mobile App @elseif($portfolio->category === 'joki') Joki Coding @else OS Install @endif
-            </span>
-          </div>
+          <span class="absolute top-4 right-4 z-20 inline-block text-[9px] uppercase font-bold tracking-widest px-2.5 py-0.5 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-md border border-light-border dark:border-dark-border rounded-full text-light-text dark:text-dark-text shadow-sm">
+            @if($portfolio->category === 'website') Website @elseif($portfolio->category === 'mobile') Mobile App @elseif($portfolio->category === 'joki') Joki Coding @else OS Install @endif
+          </span>
         </div>
 
         <!-- Details Info -->

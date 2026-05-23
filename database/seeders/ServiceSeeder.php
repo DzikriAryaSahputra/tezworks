@@ -21,8 +21,9 @@ class ServiceSeeder extends Seeder
                 'slug' => 'website-development',
                 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253" /></svg>',
                 'description' => 'Kami membangun website modern, company profile, landing page, e-commerce, hingga platform SaaS kustom yang cepat, aman, responsif, dan optimal untuk mesin pencari (SEO).',
+                'price_range' => 'Mulai dari Rp 500.000',
                 'features' => json_encode([
-                    'React / Next.js / Laravel / Tailwind',
+                    'React / Laravel / Tailwind',
                     'Desain Kustom & Responsif (Mobile-Friendly)',
                     'Optimasi Kecepatan & SEO Google',
                     'Integrasi CMS (Mudah Kelola Konten)'
@@ -36,11 +37,12 @@ class ServiceSeeder extends Seeder
                 'slug' => 'application-development',
                 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 8.25h3" /></svg>',
                 'description' => 'Pengembangan aplikasi mobile native dan hybrid (Android & iOS) dengan antarmuka yang modern, performa tinggi, dan fitur canggih yang terintegrasi penuh.',
+                'price_range' => 'Mulai dari Rp 500.000',
                 'features' => json_encode([
-                    'Flutter & React Native (Cross-Platform)',
+                    'Flutter, Java & React Native (Cross-Platform)',
                     'UI/UX Design Interaktif & Modern',
                     'Push Notification & Payment Gateway',
-                    'Bantuan Publikasi di Play Store & App Store'
+                    'Integrasi API & Database (Backend, Firebase, dll)'
                 ]),
                 'order_weight' => 2,
                 'created_at' => now(),
@@ -51,11 +53,14 @@ class ServiceSeeder extends Seeder
                 'slug' => 'joki-tugas-pemrograman',
                 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg>',
                 'description' => 'Bantuan terpercaya untuk pengerjaan tugas kuliah, proyek sekolah, praktikum coding, hingga bimbingan skripsi pemrograman dari berbagai tingkat kesulitan dengan jaminan rahasia.',
+                'price_range' => 'Mulai dari Rp 100.000',
                 'features' => json_encode([
-                    'Bahasa: Python, Java, C++, PHP, JS, Python AI',
+                    'Bahasa: Python, Java, HTML, Flutter, PHP, JS, Python AI',
                     'Source Code Bersih & Berkomentar Lengkap',
                     'Dokumentasi & Video Penjelasan Jalannya Program',
-                    'Garansi Nilai Bagus & Bebas Konsultasi'
+                    'Garansi & Bebas Konsultasi',
+                    'Menerima tugas dengan deadline H+3 (Tiga Hari) dan lebih lama',
+                    'Tidak menerima H-2 (Dua Hari sebelum deadline pengumpulan)'
                 ]),
                 'order_weight' => 3,
                 'created_at' => now(),
@@ -65,12 +70,14 @@ class ServiceSeeder extends Seeder
                 'title' => 'Instalasi Windows & Software',
                 'slug' => 'instalasi-windows-software',
                 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3" /></svg>',
-                'description' => 'Jasa instalasi sistem operasi Windows, software penunjang kerja (Office, Adobe Creative Suite, CAD, dll), optimalisasi performa OS, serta pembersihan virus secara offline maupun online (via TeamViewer/AnyDesk).',
+                'description' => 'Jasa instalasi sistem operasi Windows dan software penunjang kerja. Hanya menerima instalasi & konsultasi (Tidak menerima cleaning/bongkar laptop).',
+                'price_range' => 'Mulai dari Rp 100.000',
                 'features' => json_encode([
-                    'Instalasi Windows 10 & 11 (Clean Install)',
-                    'Instalasi Software Desain, Coding, & Office',
-                    'Aktivasi Lisensi & Update Driver Lengkap',
-                    'Tuning & Perbaikan Kinerja Komputer / Laptop'
+                    'User datang ke lokasi kami / Panggilan ke lokasi user (biaya tambahan)',
+                    'Instal ulang TANPA backup data',
+                    'Instal ulang DENGAN backup data (Max 50 GB)',
+                    'Instalasi Software (Office, Adobe, dll) & Driver',
+                    'Aktivasi Windows & Office'
                 ]),
                 'order_weight' => 4,
                 'created_at' => now(),

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->text('icon'); // E.g., emoji or lucide icon name
             $table->text('description');
+            $table->string('price_range')->nullable();
             $table->json('features')->nullable(); // List of key features of this service
             $table->integer('order_weight')->default(0); // For sorting
             $table->timestamps();
