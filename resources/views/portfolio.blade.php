@@ -243,7 +243,7 @@
         }
 
         // Susun link pesan WA kustom untuk CTA di dalam modal
-        const waNumber = '6281234567890';
+        const waNumber = '6283112540839';
         const waText = `Halo TezWorks! Saya tertarik dengan proyek "${title}" dan ingin berkonsultasi mengenai pemesanan jasa yang serupa.`;
         mOrderLink.setAttribute('href', `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`);
 

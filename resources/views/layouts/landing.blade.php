@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>@yield('title', 'TezWorks — Jasa Pembuatan Aplikasi & Website Profesional')</title>
+  <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
   <meta name="description" content="TezWorks menghadirkan solusi pembuatan website, aplikasi mobile, joki tugas pemrograman, dan instalasi sistem OS Windows berkualitas tinggi secara online & offline." />
   <meta name="keywords" content="jasa pembuatan aplikasi, jasa pembuatan website, joki tugas pemrograman, instalasi windows, developer profesional, indonesia" />
   

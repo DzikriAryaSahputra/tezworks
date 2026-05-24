@@ -57,7 +57,7 @@ class PageController extends Controller
         $contactMessage = ContactMessage::create($validated);
 
         // 3. Format Pesan WhatsApp Business
-        $whatsappNumber = '6281234567890'; // Nomor WA Business Tezworks lo (format kode negara tanpa +)
+        $whatsappNumber = '6283112540839'; // Nomor WA Business Tezworks lo (format kode negara tanpa +)
         
         $serviceLabel = match($request->service) {
             'website' => 'Pembuatan Website',
